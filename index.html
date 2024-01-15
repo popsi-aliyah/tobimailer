@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f9ff;
+        }
+
+        #container {
+            max-width: 700px;
+            background-color: #ffffff;
+            border: 2px solid #C4C4C4;
+            border-radius: 20px;
+            margin: 0 auto;
+        }
+
+        #header {
+            background-color: #007bff;
+            border-radius: 20px 20px 0 0;
+            text-align: center;
+        }
+
+        #header img {
+            width: 200px;
+            height: 200px;
+            padding: 20px;
+        }
+
+        #order-details {
+            padding: 30px;
+        }
+
+        #order-details h2 {
+            font-weight: 800;
+            font-size: 1.5rem;
+        }
+
+        .detail-row {
+            display: flex;
+            justify-content: space-between;
+            margin: 10px 0;
+        }
+
+        .detail-label {
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="header">
+            <a href="http://www.drankonme.com/" target="_blank">
+                <img src="https://i.ibb.co/n7w4FcG/IMG-7623-2.png" alt="Drank On Me Logo">
+            </a>
+        </div>
+
+        <div id="order-details">
+            <h2>Order Details</h2>
+            <div class="detail-row">
+                <span class="detail-label">Drink Name:</span>
+                <span>${drinkName}</span>
+            </div>
+            <div class="detail-row">
+                <span class="detail-label">Order Code:</span>
+                <span>${orderCode}</span>
+            </div>
+            <div class="detail-row">
+                <span class="detail-label">Amount:</span>
+                <span>${amount}</span>
+            </div>
+            <div class="detail-row">
+                <span class="detail-label">Drinker Name:</span>
+                <span>${drinkerName}</span>
+            </div>
+            <div class="detail-row">
+                <span class="detail-label">Club Name:</span>
+                <span>${clubName}</span>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
