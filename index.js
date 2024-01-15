@@ -55,7 +55,7 @@ transporter.verify((error) => {
     const club=req.body.club;
     const amount=req.body.amount;
     const mail = {
-      from:nme,
+      from:`${nme} <${useremail}>`,
       to:email,
       subject: subject,
       text:bd
