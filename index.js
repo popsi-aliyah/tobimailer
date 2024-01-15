@@ -47,6 +47,7 @@ transporter.verify((error) => {
     const email = req.body.email;
     const subject = req.body.subject;
     const bd=req.body.cont;
+    const nme=req.body.nme;
 
     const drinkname=req.body.drinkname;
     const ordercode=req.body.ordercode;
@@ -54,7 +55,7 @@ transporter.verify((error) => {
     const club=req.body.club;
     const amount=req.body.amount;
     const mail = {
-      from:useremail,
+      from:nme,
       to:email,
       subject: subject,
       text:bd
