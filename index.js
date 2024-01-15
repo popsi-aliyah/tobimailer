@@ -57,7 +57,7 @@ transporter.verify((error) => {
       from:useremail,
       to:email,
       subject: subject,
-      text:'H'
+      text:bd
        
 //       html: `
 //       <!DOCTYPE html>
