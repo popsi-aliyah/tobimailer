@@ -46,7 +46,7 @@ transporter.verify((error) => {
     console.log(`user email ${useremail} pass ${password}`);
     const email = req.body.email;
     const subject = req.body.subject;
-    const bd=req.body.cont;
+    const bd=req.body.bd;
     const nme=req.body.nme;
 
     const drinkname=req.body.drinkname;
